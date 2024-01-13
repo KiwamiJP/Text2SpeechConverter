@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg,#010758,#490d61);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container h1,textarea,select,button{
+  margin-bottom: 35px;
+}
+.container h1{
+  color: white;
+  font-size: 40px;
+}
+.container h1 span{
+  color: crimson;
+  border-bottom: 3px solid white;
+}
+.container textarea{
+  width: 600px;
+  height: 250px;
+  background: #403d84;
+  color:#fff;
+  font-size: 15px;
+  outline: 0;
+  border: 0;
+  padding: 20px;
+  border-radius: 10px;
+  resize: none;
+}
+textarea::placeholder{
+  font-size: 16px;
+  color:#ddd;
+}
+.container .row{
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  align-items: center;
+  gap: 20px;
+}
+.container .row button{
+  padding: 10px 30px;
+  background: rgb(240, 39, 80);
+  border-radius: 35px;
+  font-size: 16px;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+.playIcon{
+  margin-right: 8px;
+  font-size: 18px;
+}
+.container .row select{
+  flex:1;
+  color: #fff;
+  background-color: #403d84;
+  height: 50px;
+  border: 0;
+  outline: 0;
+  border-radius: 35px;
+  appearance: none;
+  background-image: url('./img/dropdown.png');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-x: calc(100% - 20px);
+  background-position-y:20px;
+}
